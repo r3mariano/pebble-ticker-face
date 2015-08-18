@@ -1,0 +1,51 @@
+{
+  "uuid": "3245a0ea-19c9-43d6-988c-da3ea5ca2b8b",
+  "shortName": "Ticker",
+  "longName": "Ticker",
+  "companyName": "Ricardo Mariano",
+  "versionCode": 3,
+  "versionLabel": "1.2",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt"],
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "KEY_TEMPERATURE": 0,
+    "KEY_CONDITIONS": 1,
+    "KEY_SHOW_SECONDS": 2,
+    "KEY_DATE_FORMAT": 3,
+    "KEY_SHOW_AMPM_24H": 4
+  },
+  "capabilities": [
+    "location",
+    "configurable"
+  ],
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "DOTS",
+        "file": "dots.png",
+        "targetPlatforms": [
+          "basalt"
+        ]
+      },
+      {
+        "type": "png",
+        "name": "DOTS",
+        "file": "dots_bw.png",
+        "targetPlatforms": [
+          "aplite"
+        ]
+      },
+      {
+        "characterRegex": "[0-9:A-Za-z° /]",
+        "type": "font",
+        "name": "LED_38",
+        "file": "fonts/Times Square KM Regular Mac.ttf",
+        "compatibility": "2.7"
+      }
+    ]
+  }
+}

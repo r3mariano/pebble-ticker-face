@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ticker configuration</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Ticker configuration</h1>
+    <form id="config_form">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <label for="show_seconds">Show seconds</label>
+          <div class="btn-group btn-group-sm pull-right" data-toggle="buttons">
+            <label class="btn btn-default active">
+              <input type="radio" name="show_seconds" id="show_seconds_yes" value="1" autocomplete="off" checked> Yes
+            </label>
+            <label class="btn btn-default">
+              <input type="radio" name="show_seconds" id="show_seconds_no" value="0" autocomplete="off"> No
+            </label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <label for="show_ampm_24h">Show AM/PM with 24h</label>
+          <div class="btn-group btn-group-sm pull-right" data-toggle="buttons">
+            <label class="btn btn-default">
+              <input type="radio" name="show_ampm_24h" id="show_seconds_yes" value="1" autocomplete="off"> Yes
+            </label>
+            <label class="btn btn-default active">
+              <input type="radio" name="show_ampm_24h" id="show_seconds_no" value="0" autocomplete="off" checked> No
+            </label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <label for="date_format">Date format</label>
+          <div class="btn-group btn-group-sm pull-right" data-toggle="buttons">
+            <label class="btn btn-default active">
+              <input type="radio" name="date_format" id="date_format_dm" value="0" autocomplete="off" checked> DD/MM
+            </label>
+            <label class="btn btn-default">
+              <input type="radio" name="date_format" id="date_format_md" value="1" autocomplete="off"> MM/DD
+            </label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <label for="weather_units">Temperature units</label>
+          <div class="btn-group btn-group-sm pull-right" data-toggle="buttons">
+            <label class="btn btn-default active">
+              <input type="radio" name="weather_units" id="weather_units_c" value="0" autocomplete="off" checked> &deg;C
+            </label>
+            <label class="btn btn-default">
+              <input type="radio" name="weather_units" id="weather_units_f" value="1" autocomplete="off"> &deg;F
+            </label>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <label for="location_name">Location</label>
+          <input class="form-control" id="location_name" type="text"/>
+          <span class="help-block">Leave blank to use your current location.</span>
+        </li>
+      </ul>
+      <input type="submit" id="save_button" class="btn btn-primary" value="Save">
+    </form>
+    <hr/>
+
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="config.js"></script>
+</body> 
+</html>
